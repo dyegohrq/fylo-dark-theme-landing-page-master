@@ -1,0 +1,53 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    
+    --Dark-Blue: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+    --Dark-Blue-main : hsl(218, 28%, 13%); /*(main background)*/
+    --Dark-Blue-footer : hsl(216, 53%, 9%); /*(footer background)*/
+    --Dark-Blue-testimonials : hsl(219, 30%, 18%); /*(testimonials background)*/
+    
+    /* ### Accent */
+    
+    --Cyan : hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+    --Blue : hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --Light-Red : hsl(0, 100%, 63%); /*(error)*/
+    
+    /* ### Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+
+    --font-raleway: "Raleway", sans-serif;
+    --font-open: "Open Sans", sans-serif;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--Dark-Blue-main);
+    font-family: var(--font-open);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-present-1 {
+    font-family: var(--font-raleway);
+    font-weight: var(--font-regular);
+    font-size: 12px;
+    letter-spacing: 1px;
+}

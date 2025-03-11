@@ -1,0 +1,36 @@
+header {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a img {
+    width: 80px;
+    height: 24px;
+}
+
+nav .nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+nav .nav-link {
+    color: var(--White);
+    transition: all ease-in-out .3s;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 80px;
+    }
+
+    nav .nav-list {
+        gap: 60px;
+    }
+
+    nav .nav-link:hover {
+        font-weight: var(--font-bold);
+        text-decoration: underline;
+    }
+}
