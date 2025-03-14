@@ -3,15 +3,15 @@
 
     /* ### Primary */
     
-    --Dark-Blue: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
-    --Dark-Blue-main : hsl(218, 28%, 13%); /*(main background)*/
-    --Dark-Blue-footer : hsl(216, 53%, 9%); /*(footer background)*/
-    --Dark-Blue-testimonials : hsl(219, 30%, 18%); /*(testimonials background)*/
+    --Dark-Blue: #1c2431; /*(intro and email sign up background)*/
+    --Dark-Blue-main : #181f2a; /*(main background)*/
+    --Dark-Blue-footer : #0b1523; /*(footer background)*/
+    --Dark-Blue-testimonials : #202a3c; /*(testimonials background)*/
     
     /* ### Accent */
     
-    --Cyan : hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
-    --Blue : hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --Cyan : #65e2d9; /*(inside call-to-action gradient)*/
+    --Blue : #339ecc; /*(inside call-to-action gradient)*/
     --Light-Red : hsl(0, 100%, 63%); /*(error)*/
     
     /* ### Neutral */
@@ -79,6 +79,13 @@ a {
     color: var(--White);
 }
 
+.text-present-5 {
+    font-family: var(--font-open);
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: var(--font-regular);
+}
+
 .text-button {
     font-family: var(--font-raleway);
     font-weight: var(--font-bold);
@@ -92,12 +99,6 @@ a {
     height: 100vh;
     position: absolute;
     top: 380px;
-    ,
-
-
-
-
-    
     z-index: -1;
 }
 
@@ -120,7 +121,7 @@ a {
 
     .bg .bg-curvy {
         background: url(../images/bg-curvy-desktop.svg) no-repeat center / cover;
-        height: 261px;
+        height: 661px;
     }
 }
 

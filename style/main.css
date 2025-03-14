@@ -2,6 +2,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 24px;
+    max-width: 1280px;
+    margin: auto;
 }
 
 main .contant .img-intro {
@@ -69,5 +71,89 @@ main .container-cart .cart p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+}
+
+main .stay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+main .stay img {
+    width: 100%;
+    max-width: 614px;
+    height: 100%;
+}
+
+main .stay .description-stay {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 563px;
+}
+
+main .stay .description-stay p {
+    color: var(--White);
+}
+
+main .stay a {
+    width: 150px;  
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-bottom: 1px solid var(--Cyan) ;
+    padding-bottom: 6px;
+    transition: all .5s ease-in-out;
+}
+
+main .stay a:hover {
+    color: var(--White);
+    border-color: var(--White);
+}
+
+@media screen and (min-width: 768px) {
+    main .stay {
+        flex-direction: row;
+        gap: 60px;
+    }
+}
+
+main .comments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 360px;
+    margin: 160px auto 0 auto;
+    padding-top: 4px;
+}
+
+main .comments .icon {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 200px;
+    line-height: 200px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    color: var(--Cyan);
+    z-index: -1;
+} 
+
+main .comments .card {
+    padding: 24px;
+    background: var(--Dark-Blue-testimonials);
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main .comments .icon {
+        font-size: 80px;
+        line-height: 50px;
     }
 }
