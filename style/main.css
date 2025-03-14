@@ -9,3 +9,65 @@ main .contant .img-intro {
     width: 100%;
     height: 335px;
 }
+
+main .description {
+    width: 100%;
+    margin: 33px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main .description h1, main .description p {
+    color: var(--White);
+    max-width: 420px;
+} 
+
+main .description a {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    main .contant .img-intro {
+        height: 314px;
+    }
+
+
+}
+
+main .container-cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 85px 0;
+    gap: 80px;
+}
+
+main .container-cart .cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+}
+
+main .container-cart .cart img {
+    margin-bottom: 24px;
+}
+
+main .container-cart .cart p {
+    margin-top: 8px;
+    color: var(--White);
+}
+
+@media screen and (min-width: 768px) {
+    main .container-cart{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
